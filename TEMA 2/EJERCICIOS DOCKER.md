@@ -42,3 +42,6 @@
     Comprobamos que el tamaño del cotenedor es de 453MB siendo 2B virtuales.
     
     ![](assets/ejercicio4-1.PNG)
+     
+ - **5. Con la instrucción docker cp podemos copiar ficheros a o desde un contenedor. Puedes encontrar información es esta página. Crea un fichero en tu ordenador, con el siguiente contenido.**
+    
