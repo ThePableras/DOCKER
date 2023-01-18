@@ -24,4 +24,13 @@
     
     ![](assets/ejercicio1-3.PNG)
     
+- **3. Crea un contenedor demonio con la imagen php:7.4-apache.**
+
+    ```sh
+    docker run -d -p 80:80 --name apache-php -v "$PWD":/var/www/html php:7.4-apache
+    ```
+    Creamos la imagen docker con php, y observamos que se visualiza correctamente en el navegador.
     
+    ![](assets/ejercicio2-1.PNG)
+    
+    ![](assets/ejercicio2-2.PNG)
