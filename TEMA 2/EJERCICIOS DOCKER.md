@@ -12,10 +12,16 @@
     ```
     ![](assets/ejercicio1.PNG)
     ![](assets/ejercicio1-2.PNG)
-    Descargamos las imagenes en el sistema y comprobamos que están correctamente descargadas.
+    Descargamos las imagenes en el sistema.
+   
     
+-  **2. Muestra las imágenes que tienes descargadas.**
+ 
     ```sh
     docker images
     ```
+    Comprobamos que estén correctamente descargadas.
+    
     ![](assets/ejercicio1-3.PNG)
+    
     
