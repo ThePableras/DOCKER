@@ -34,3 +34,11 @@
     ![](assets/ejercicio2-1.PNG)
     
     ![](assets/ejercicio2-2.PNG)
+    
+- **4. Comprueba el tamaño del contenedor en el disco duro.**
+    ```sh
+    docker ps -a -s
+    ```
+    Comprobamos que el tamaño del cotenedor es de 453MB siendo 2B virtuales.
+    
+    ![](assets/ejercicio4-1.PNG)
