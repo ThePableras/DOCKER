@@ -27,7 +27,7 @@
 - **3. Crea un contenedor demonio con la imagen php:7.4-apache.**
 
     ```sh
-    docker run -d -p 80:80 --name apache-php -v "$PWD":/var/www/html php:7.4-apache
+    docker run -d -p 80:80 --name apache-php php:7.4-apache
     ```
     Creamos la imagen docker con php, y observamos que se visualiza correctamente en el navegador.
     
@@ -58,8 +58,16 @@
     
     
     ```sh
-        docker cp /home/daw/info.php apache-php:/var/www/html
+    docker cp /home/daw/info.php apache-php:/var/www/html
     ```
     Copiamos el archivo info.php a /var/www/html de la maquina docker.
     
     ![](assets/ejercicio5-cp.PNG)
+    
+- **6. Vuelve a comprobar el espacio ocupado por el contenedor.**
+    ```sh
+    docker ps -a -s
+    ```
+    ![](assets/ejercicio6-ps.PNG)
+    
+    Observamos que el tamaño del contenedor ha pasado de 2B a 28B, después de transferir el archivo info.php.
