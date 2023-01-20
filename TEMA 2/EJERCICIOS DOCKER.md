@@ -68,6 +68,15 @@
     ```sh
     docker ps -a -s
     ```
+    
     ![](assets/ejercicio6-ps.PNG)
     
     Observamos que el tamaño del contenedor ha pasado de 2B a 28B, después de transferir el archivo info.php.
+    
+- **7. Accede al fichero info.php desde un navegador web.**
+    
+    ![](assets/ejercicio7-web.PNG)
+    
+    Accedemos desde el navegador a la web y observamos que visualizamos correctamente el archivo php.
+    
+    http://172.17.0.2/info.php
