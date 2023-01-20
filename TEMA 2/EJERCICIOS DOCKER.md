@@ -44,4 +44,22 @@
     ![](assets/ejercicio4-1.PNG)
      
  - **5. Con la instrucción docker cp podemos copiar ficheros a o desde un contenedor. Puedes encontrar información es esta página. Crea un fichero en tu ordenador, con el siguiente contenido.**
+    ```sh
+    nano /home/daw/info.php
+    ```
+    ```php
+    <?php
+        echo phpinfo();
+    ?>
+    ```
+    Creamos el fichero info.php con el código php en nuestra máquina host.
     
+    ![](assets/ejercicio5-php.PNG)
+    
+    
+    ```sh
+        docker cp /home/daw/info.php apache-php:/var/www/html
+    ```
+    Copiamos el archivo info.php a /var/www/html de la maquina docker.
+    
+    ![](assets/ejercicio5-cp.PNG)
