@@ -119,10 +119,18 @@ Copiamos el archivo index.html al contenedor.
         docker rm <id_contenedor>
     ```
     
-    ![](assets/ejercicio5.PNG)
+    ![](assets/ejercicio5b.PNG)
     
     Borramos el contenedor.
 
 - **6. Crea un nuevo contenedor y monta el mismo directorio como en el ejercicio anterior.**
 
+    ```sh
+        docker run -d -p 80:80 --name apache-php5 -v /home/daw/miweb2:/var/www/html php:7.4-apache
+    ```
+    
+    ![](assets/ejercicio6b.PNG)
+    
+    Creamos el contenedor de nuevo.
+    
 - **7. Accede al contenedor desde el navegador para ver la información ofrecida por el ficheroindex.html. ¿Se sigue viendo el mismo contenido?**
