@@ -44,6 +44,7 @@ Copiamos el archivo index.html al contenedor.
     
 - **5. Borra el contenedor**
     ```sh
+    docker stop <id_contenedor>
     docker rm <id_contenedor>
     ```
     
