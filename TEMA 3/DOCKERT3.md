@@ -83,6 +83,14 @@ Copiamos el archivo index.html al contenedor.
 
 - **2. Crea un contenedor desde la imagen php:7.4-apache donde montes en el directorio/var/www/html el directorio que has creado por medio de bind mount.**
 
+    ```sh
+        docker run -d -p 80:80 --name apache-php4 -v /home/daw/miweb2:/var/www/html php:7.4-apache
+    ```
+    
+    Creamos el contenedor con bind mount.
+    
+    ![](assets/ejercicio2b.PNG)
+
 - **3. Accede al contenedor desde el navegador para ver la información ofrecida por el ficheroindex.html.**
 
 - **4. Modifica el contenido del fichero index.html en tu host y comprueba que al refrescar lapágina ofrecida por el contenedor, el contenido ha cambiado.**
