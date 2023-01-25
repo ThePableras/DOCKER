@@ -50,11 +50,18 @@ Copiamos el archivo index.html al contenedor.
     
     ![](assets/ejercicio5.PNG)
     
-    Paramos el contenedor y lo eliminamos el contenedor.
+    Paramos el contenedor y eliminamos el contenedor.
 
 - **6. Crea un nuevo contenedor y monta el mismo volumen como en el ejercicio anterior.**
-
-- **7. Accede al contenedor desde el navegador para ver la información ofrecida por el ficheroindex.html. ¿Seguía existiendo ese fichero?**
+    ```sh
+        docker run -d -p 80:80 --name apache-php3 -v miweb:/var/www/html php:7.4-apache
+    ```
+    
+    ![](assets/ejercicio6.PNG)
+    
+    Creamos un nuvo contenedor y montamos el mismo volumen del ejercicio anterior.
+    
+- **7. Accede al contenedor desde el navegador para ver la información ofrecida por el fichero index.html. ¿Seguía existiendo ese fichero?**
 
     **Vamos a trabajar con bind mount:**
 
