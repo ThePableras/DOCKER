@@ -134,3 +134,7 @@ Copiamos el archivo index.html al contenedor.
     Creamos el contenedor de nuevo.
     
 - **7. Accede al contenedor desde el navegador para ver la información ofrecida por el ficheroindex.html. ¿Se sigue viendo el mismo contenido?**
+
+    ![](assets/ejercicio7b.PNG)
+    
+    Observamos que el contenido se sigue visualizando.
