@@ -32,15 +32,30 @@
     Creamos el archivo index.html en nuestro equipos con nano y copiamos dicho fichero a la máquina docker.
 
 Copiamos el archivo index.html al contenedor.
-- **4. Accede al contenedor desde el navegador para ver la información ofrecida por el ficheroindex.html.**
-
+- **4. Accede al contenedor desde el navegador para ver la información ofrecida por el fichero index.html.**
+    ```sh
+        docker start apache-php2
+    ```
+    
+    ![](assets/ejercicio4.PNG)
+    ![](assets/ejercicio4-1.PNG)
+    
+    Iniciamos el contenedor y accedemos por el navegador.
+    
 - **5. Borra el contenedor**
+    ```sh
+    docker rm <id_contenedor>
+    ```
+    
+    ![](assets/ejercicio5.PNG)
+    
+    Paramos el contenedor y lo eliminamos el contenedor.
 
 - **6. Crea un nuevo contenedor y monta el mismo volumen como en el ejercicio anterior.**
 
 - **7. Accede al contenedor desde el navegador para ver la información ofrecida por el ficheroindex.html. ¿Seguía existiendo ese fichero?**
 
-    *Vamos a trabajar con bind mount:*
+    **Vamos a trabajar con bind mount:**
 
 - **1. Crea un directorio en tu host y dentro crea un fichero index.html.**
 
