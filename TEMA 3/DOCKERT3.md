@@ -114,6 +114,15 @@ Copiamos el archivo index.html al contenedor.
     
 - **5. Borra el contenedor**
 
+    ```sh
+        docker stop <id_contenedor>
+        docker rm <id_contenedor>
+    ```
+    
+    ![](assets/ejercicio5.PNG)
+    
+    Borramos el contenedor.
+
 - **6. Crea un nuevo contenedor y monta el mismo directorio como en el ejercicio anterior.**
 
 - **7. Accede al contenedor desde el navegador para ver la información ofrecida por el ficheroindex.html. ¿Se sigue viendo el mismo contenido?**
