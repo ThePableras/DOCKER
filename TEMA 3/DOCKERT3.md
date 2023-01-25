@@ -1,7 +1,7 @@
 # Tarea 3 - Almacenamiento en Docker - IESGN
 > Realizado por Pablo R.
 
-    *Vamos a trabajar con volúmenes docker:*
+**Vamos a trabajar con volúmenes docker:**
 
 - **1. Crear un volumen docker que se llame miweb.**
     ```sh
@@ -19,8 +19,19 @@
     
     Creamos el php asociado al volumen miweb.
 
-- **3. Utiliza el comando docker cp para copiar un fichero index.html en el directorio/var/www/html.**
+- **3. Utiliza el comando docker cp para copiar un fichero index.html en el directorio /var/www/html.**
+    ```sh
+        nano /home/daw/index.html
+        docker cp /home/daw/index.html apache-php2:/var/www/html
+    ```
+    
+    ![](assets/ejercicio3.PNG)
+    
+    ![](assets/ejercicio3-1.PNG)
+    
+    Creamos el archivo index.html en nuestro equipos con nano y copiamos dicho fichero a la máquina docker.
 
+Copiamos el archivo index.html al contenedor.
 - **4. Accede al contenedor desde el navegador para ver la información ofrecida por el ficheroindex.html.**
 
 - **5. Borra el contenedor**
