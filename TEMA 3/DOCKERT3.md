@@ -71,15 +71,15 @@ Copiamos el archivo index.html al contenedor.
 
 - **1. Crea un directorio en tu host y dentro crea un fichero index.html.**
 
-        ```sh
-            mkdir /home/daw/miweb2
-            nano /home/daw/miweb2/index.html
-        ```
-        
-        ![](assets/ejercico1b.PNG)
-        ![](assets/ejercicio1b-2.PNG)
-        
-        Creamos el directorio y el fichero index.
+    ```sh
+        mkdir /home/daw/miweb2
+        nano /home/daw/miweb2/index.html
+    ```
+    
+    ![](assets/ejercico1b.PNG)
+    ![](assets/ejercicio1b-2.PNG)
+    
+    Creamos el directorio y el fichero index.
 
 - **2. Crea un contenedor desde la imagen php:7.4-apache donde montes en el directorio/var/www/html el directorio que has creado por medio de bind mount.**
 
