@@ -91,7 +91,11 @@ Copiamos el archivo index.html al contenedor.
     
     ![](assets/ejercicio2b.PNG)
 
-- **3. Accede al contenedor desde el navegador para ver la información ofrecida por el ficheroindex.html.**
+- **3. Accede al contenedor desde el navegador para ver la información ofrecida por el fichero index.html.**
+    
+    ![](assets/ejercicio3b.PNG.jpg)
+    
+    Accedemos a la web y observamos que tenemos la web funcionando.
 
 - **4. Modifica el contenido del fichero index.html en tu host y comprueba que al refrescar lapágina ofrecida por el contenedor, el contenido ha cambiado.**
 
