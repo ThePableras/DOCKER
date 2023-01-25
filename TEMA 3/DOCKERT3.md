@@ -98,7 +98,20 @@ Copiamos el archivo index.html al contenedor.
     Accedemos a la web y observamos que tenemos la web funcionando.
 
 - **4. Modifica el contenido del fichero index.html en tu host y comprueba que al refrescar lapágina ofrecida por el contenedor, el contenido ha cambiado.**
-
+    ```sh
+        nano /home/daw/miweb2/index.html
+    ```
+    
+    ![](assets/ejercicio4b.PNG)
+    
+    ![](assets/ejercicio4b-1.PNG)
+    
+    Modificamos el archivo en el host.
+    
+    ![](assets/ejercicio4b-2.PNG)
+    
+    Observamos el cambio.
+    
 - **5. Borra el contenedor**
 
 - **6. Crea un nuevo contenedor y monta el mismo directorio como en el ejercicio anterior.**
