@@ -62,7 +62,11 @@ Copiamos el archivo index.html al contenedor.
     Creamos un nuvo contenedor y montamos el mismo volumen del ejercicio anterior.
     
 - **7. Accede al contenedor desde el navegador para ver la información ofrecida por el fichero index.html. ¿Seguía existiendo ese fichero?**
-
+    
+    ![](assets/ejercicio7.PNG)
+    
+    Sigue existiendo pues reutilizamos el volumen anterior.
+    
     **Vamos a trabajar con bind mount:**
 
 - **1. Crea un directorio en tu host y dentro crea un fichero index.html.**
