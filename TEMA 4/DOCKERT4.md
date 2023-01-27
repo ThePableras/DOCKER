@@ -20,4 +20,14 @@
         
         Creamos las redes que se nos pide.
         
+    2. **Poner en ejecución un contenedor de la imagen ubuntu:20.04 que tenga como hostname host1, como IP 172.28.0.10 y que esté conectado a la red1. Lo llamaremos u1.**
         
+        ```sh
+        docker run -it --name u1 --network red1 --ip 172.28.0.10 ubuntu:20.04
+        ```
+        
+        ![](./assets/ej2.PNG)
+        
+        Creamos el contenedor con la red1 y la ip proporconada en el ejercicio.
+        
+    
