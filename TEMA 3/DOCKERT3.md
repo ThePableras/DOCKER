@@ -89,7 +89,7 @@ Copiamos el archivo index.html al contenedor.
     
     Creamos el contenedor con bind mount.
     
-    ![](assets/ejercicio2b.png)
+    ![](assets/ejercicio2b.PNG)
 
 - **3. Accede al contenedor desde el navegador para ver la información ofrecida por el fichero index.html.**
     
