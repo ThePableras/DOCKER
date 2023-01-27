@@ -7,7 +7,7 @@
     ```sh
         docker volume create miweb
     ```
-    ![](assets/ejercicio1.png)
+    ![](assets/ejercicio1.PNG)
     
     Creamos el volumen mi web.
     
@@ -15,7 +15,7 @@
     ```sh
         docker run -d -p 80:80 --name apache-php2 -v miweb:/var/www/html php:7.4-apache
     ```
-    ![](assets/ejercicio2.png)
+    ![](assets/ejercicio2.PNG)
     
     Creamos el php asociado al volumen miweb.
 
@@ -25,9 +25,9 @@
         docker cp /home/daw/index.html apache-php2:/var/www/html
     ```
     
-    ![](assets/ejercicio3.PNG)
+    ![](assets/ejercicio3.png)
     
-    ![](assets/ejercicio3-1.PNG)
+    ![](assets/ejercicio3-1.png)
     
     Creamos el archivo index.html en nuestro equipos con nano y copiamos dicho fichero a la máquina docker.
 
@@ -37,8 +37,8 @@ Copiamos el archivo index.html al contenedor.
         docker start apache-php2
     ```
     
-    ![](assets/ejercicio4.PNG)
-    ![](assets/ejercicio4-1.PNG)
+    ![](assets/ejercicio4.png)
+    ![](assets/ejercicio4-1.png)
     
     Iniciamos el contenedor y accedemos por el navegador.
     
@@ -48,7 +48,7 @@ Copiamos el archivo index.html al contenedor.
     docker rm <id_contenedor>
     ```
     
-    ![](assets/ejercicio5.PNG)
+    ![](assets/ejercicio5.png)
     
     Paramos el contenedor y eliminamos el contenedor.
 
@@ -57,13 +57,13 @@ Copiamos el archivo index.html al contenedor.
         docker run -d -p 80:80 --name apache-php3 -v miweb:/var/www/html php:7.4-apache
     ```
     
-    ![](assets/ejercicio6.PNG)
+    ![](assets/ejercicio6.png)
     
     Creamos un nuevo contenedor y montamos el mismo volumen del ejercicio anterior.
     
 - **7. Accede al contenedor desde el navegador para ver la información ofrecida por el fichero index.html. ¿Seguía existiendo ese fichero?**
     
-    ![](assets/ejercicio7.PNG)
+    ![](assets/ejercicio7.png)
     
     Sigue existiendo pues reutilizamos el volumen anterior.
     
@@ -76,8 +76,8 @@ Copiamos el archivo index.html al contenedor.
         nano /home/daw/miweb2/index.html
     ```
     
-    ![](assets/ejercico1b.PNG)
-    ![](assets/ejercicio1b-2.PNG)
+    ![](assets/ejercico1b.png)
+    ![](assets/ejercicio1b-2.png)
     
     Creamos el directorio y el fichero index.
 
@@ -93,7 +93,7 @@ Copiamos el archivo index.html al contenedor.
 
 - **3. Accede al contenedor desde el navegador para ver la información ofrecida por el fichero index.html.**
     
-    ![](assets/ejercicio3b.png.jpg)
+    ![](assets/ejercicio3b.PNG.jpg)
     
     Accedemos a la web y observamos que tenemos la web funcionando.
 
@@ -102,13 +102,13 @@ Copiamos el archivo index.html al contenedor.
         nano /home/daw/miweb2/index.html
     ```
     
-    ![](assets/ejercicio4b.PNG)
+    ![](assets/ejercicio4b.png)
     
-    ![](assets/ejercicio4b-1.PNG)
+    ![](assets/ejercicio4b-1.png)
     
     Modificamos el archivo en el host.
     
-    ![](assets/ejercicio4b-2.PNG)
+    ![](assets/ejercicio4b-2.png)
     
     Observamos el cambio.
     
@@ -119,7 +119,7 @@ Copiamos el archivo index.html al contenedor.
         docker rm <id_contenedor>
     ```
     
-    ![](assets/ejercicio5b.PNG)
+    ![](assets/ejercicio5b.png)
     
     Borramos el contenedor.
 
@@ -129,12 +129,12 @@ Copiamos el archivo index.html al contenedor.
         docker run -d -p 80:80 --name apache-php5 -v /home/daw/miweb2:/var/www/html php:7.4-apache
     ```
     
-    ![](assets/ejercicio6b.PNG)
+    ![](assets/ejercicio6b.png)
     
     Creamos el contenedor de nuevo.
     
 - **7. Accede al contenedor desde el navegador para ver la información ofrecida por el ficheroindex.html. ¿Se sigue viendo el mismo contenido?**
 
-    ![](assets/ejercicio7b.PNG)
+    ![](assets/ejercicio7b.png)
     
     Observamos que el contenido se sigue visualizando.
