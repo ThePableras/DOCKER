@@ -23,7 +23,8 @@
 2. **Poner en ejecución un contenedor de la imagen ubuntu:20.04 que tenga como hostname host1, como IP 172.28.0.10 y que esté conectado a la red1. Lo llamaremos u1.**
         
     ```sh
-    docker run -it --name u1 --network red1 --ip 172.28.0.10 ubuntu:20.04
+        docker run -it --name u1 --network red1 --hostname host1 --ip 172.28.0.10 ubuntu:20.04
+        docker start u1
     ```
     
     ![](./assets/ej2.PNG)
@@ -33,7 +34,6 @@
 3. **Entrar en ese contenedor e instalar la aplicacion ping ( apt update && apt install inetutils-ping).**
 
     ```sh
-        docker start u1
         docker exec -it u1 bash
         apt update
         apt install inetutils-ping
@@ -43,3 +43,13 @@
     
     Iniciamos el contenedor, entramos por bash e instalamos la herramienta ping.
     
+4. **Poner en ejecución un contenedor de la imagen ubuntu:20.04 que tenga como hostname host2 y que esté conectado a la red2. En este caso será docker el que le de una IP correspondiente a esa red. Lo llamaremos u2.**
+
+    ```sh
+        docker run -it --name u2 --network red2 ubuntu:20.04
+        docker start u2
+    ```
+    
+    ![](assets/ej4.PNG)
+    
+    Ponemos en ejecución la segunda máquina.
