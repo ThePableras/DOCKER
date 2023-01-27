@@ -16,7 +16,7 @@
             docker network create red2
         ```
         
-        ![](./assets/ej1.PNG)
+        ![](./assets/ej1.png)
         
         Creamos las redes que se nos pide.
         
@@ -27,7 +27,7 @@
         docker start u1
     ```
     
-    ![](./assets/ej2.PNG)
+    ![](./assets/ej2.png)
     
     Creamos el contenedor con la red1 y la ip proporconada en el ejercicio.
         
@@ -39,7 +39,7 @@
         apt install inetutils-ping
     ```
     
-    ![](./assets/ej3.PNG)
+    ![](./assets/ej3.png)
     
     Iniciamos el contenedor, entramos por bash e instalamos la herramienta ping.
     
@@ -50,7 +50,7 @@
         docker start u2
     ```
     
-    ![](assets/ej4.PNG)
+    ![](assets/ej4.png)
     
     Ponemos en ejecución la segunda máquina.
     
@@ -62,7 +62,7 @@
         apt install inetutils-ping
     ```
     
-    ![](assets/ej5.PNG)
+    ![](assets/ej5.png)
     
     Instalamos la herramienta ping.
     
@@ -76,13 +76,13 @@
 
 - Pantallazo donde se vea la configuración del contenedor u2.
 
-![](assets/pantallazo1.PNG)
+![](assets/pantallazo1.png)
 
 ```sh
     docker inspect u2
 ```
 
-![](assets/pantallazo2.PNG)
+![](assets/pantallazo2.png)
 
 - Pantallazo donde desde cualquiera de los dos contenedores se peuda ver no hacemos ping al otro ni por ip ni por nombre.
 
@@ -92,7 +92,7 @@
     ping 172.19.0.2
 ```
 
-![](assets/pantallazo3.PNG)
+![](assets/pantallazo3.png)
 
 Intentamos hacer ping desde u1 a u2.
 
@@ -102,4 +102,4 @@ Intentamos hacer ping desde u1 a u2.
     docker network connect red2 u1
 ```
 
-![](assets/pantallazo4.PNG)
+![](assets/pantallazo4.png)
