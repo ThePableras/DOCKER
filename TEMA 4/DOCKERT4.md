@@ -66,4 +66,40 @@
     
     Instalamos la herramienta ping.
     
-    
+**PANTALLAZOS. Pantallazos.**
+
+- Pantallazo donde se vea la configuración del contenedor u1.
+
+```sh
+    docker inspect u1
+```
+
+- Pantallazo donde se vea la configuración del contenedor u2.
+
+![](assets/pantallazo1.PNG)
+
+```sh
+    docker inspect u2
+```
+
+![](assets/pantallazo2.PNG)
+
+- Pantallazo donde desde cualquiera de los dos contenedores se peuda ver no hacemos ping al otro ni por ip ni por nombre.
+
+```sh
+    docker exec -it u1 bash
+    ping u2
+    ping 172.19.0.2
+```
+
+![](assets/pantallazo3.PNG)
+
+Intentamos hacer ping desde u1 a u2.
+
+- Pantallazo donde se pueda comprobar que si conectamos el contenedor u1 a la red2 (con docker network connect), desde el contenedor u1, tenemos al contenedor u2 mediante ping, tanto por nombre como por ip.
+
+```sh
+    docker network connect red2 u1
+```
+
+![](assets/pantallazo4.PNG)
