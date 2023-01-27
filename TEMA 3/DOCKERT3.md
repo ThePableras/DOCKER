@@ -7,7 +7,7 @@
     ```sh
         docker volume create miweb
     ```
-    ![](assets/ejercicio1.PNG)
+    ![](assets/ejercicio1.png)
     
     Creamos el volumen mi web.
     
@@ -15,7 +15,7 @@
     ```sh
         docker run -d -p 80:80 --name apache-php2 -v miweb:/var/www/html php:7.4-apache
     ```
-    ![](assets/ejercicio2.PNG)
+    ![](assets/ejercicio2.png)
     
     Creamos el php asociado al volumen miweb.
 
@@ -89,11 +89,11 @@ Copiamos el archivo index.html al contenedor.
     
     Creamos el contenedor con bind mount.
     
-    ![](assets/ejercicio2b.PNG)
+    ![](assets/ejercicio2b.png)
 
 - **3. Accede al contenedor desde el navegador para ver la información ofrecida por el fichero index.html.**
     
-    ![](assets/ejercicio3b.PNG.jpg)
+    ![](assets/ejercicio3b.png.jpg)
     
     Accedemos a la web y observamos que tenemos la web funcionando.
 
