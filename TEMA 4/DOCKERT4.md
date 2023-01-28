@@ -145,6 +145,6 @@ Vamos a desplegar la aplicación nextcloud con una base de datos (puedes elegir 
 
 4. **Accede a la aplicación usando un navegador web. **
 
+![](assets/ej9.png)
 
-
-**El documento debe contener, además, los siguientes pantallazos: Pantallazo con la instrucción para crear el contenedor de la base de datos. Pantallazo con la instrucción para crear el contenedor de la aplicación. Pantallazo donde se ve el acceso a la aplicación desde un navegador web.**
+![](assets/ej9-2.png)
