@@ -125,7 +125,7 @@ Vamos a desplegar la aplicación nextcloud con una base de datos (puedes elegir 
 
    ```sh
    mkdir /home/mariadb
-   docker run -it --name midb --network mired --e MARIADB_USER=nextcloud --env MARIADB_PASSWORD=mipassword MARIADB_ROOT_PASSWORD=mipasswordsecreta -v /home/mariadb:/var/lib/mysql mariadb:latest
+   docker run -it --name midb --network mired --env MARIADB_DATABASE=nextcloud --e MARIADB_USER=nextcloud --env MARIADB_PASSWORD=nextcloud MARIADB_ROOT_PASSWORD=mipasswordsecreta -v /home/mariadb:/var/lib/mysql mariadb:latest
    ```
 
    ![](assets/ej7.png)
@@ -134,7 +134,14 @@ Vamos a desplegar la aplicación nextcloud con una base de datos (puedes elegir 
 
 3. **A continuación, siguiendo la documentación de la imagen nextcloud , crea un contenedor conectado a la misma red, e indica las variables adecuadas para que se configure de forma adecuada y realice la conexión a la base de datos. El contenedor también debe ser persistente usando almacenamiento.** 
 
+   ```sh
+   mkdir /home/nextcloud
+   docker run -d -v /home/nextcloud:/var/www/html --network mired  --env MYSQL_HOST=midb --env MYSQL_DATABASE=nextcloud --env MYSQL_USER=nextcloud --env MYSQL_PASSWORD=mipassword nextcloud
+   ```
 
+   ![](./assets/ej8.png)
+
+   Inicializamos nextcloud.
 
 4. **Accede a la aplicación usando un navegador web. **
 
