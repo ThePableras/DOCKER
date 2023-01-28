@@ -123,10 +123,21 @@ Vamos a desplegar la aplicación nextcloud con una base de datos (puedes elegir 
 
 2. **Crea el contenedor de la base de datos conectado a la red que has creado. La base de datos se debe configurar para crear una base de datos y un usuario. Además el contenedor debe utilizar almacenamiento (volúmenes o bind mount) para guardar la información. Puedes seguir la documentación de mariadb o la de PostgreSQL .** 
 
-   
+   ```sh
+   mkdir /home/mariadb
+   docker run -it --name midb --network mired --e MARIADB_USER=nextcloud --env MARIADB_PASSWORD=mipassword MARIADB_ROOT_PASSWORD=mipasswordsecreta -v /home/mariadb:/var/lib/mysql mariadb:latest
+   ```
 
-3.  **A continuación, siguiendo la documentación de la imagen nextcloud , crea un contenedor conectado a la misma red, e indica las variables adecuadas para que se configure de forma adecuada y realice la conexión a la base de datos. El contenedor también debe ser persistente usando almacenamiento.** 
+   ![](assets/ej7.png)
 
-   
+   Inicializamos la bd.
 
-4. **Accede a la aplicación usando un navegador web. El documento debe contener, además, los siguientes pantallazos: Pantallazo con la instrucción para crear el contenedor de la base de datos. Pantallazo con la instrucción para crear el contenedor de la aplicación. Pantallazo donde se ve el acceso a la aplicación desde un navegador web.**
+3. **A continuación, siguiendo la documentación de la imagen nextcloud , crea un contenedor conectado a la misma red, e indica las variables adecuadas para que se configure de forma adecuada y realice la conexión a la base de datos. El contenedor también debe ser persistente usando almacenamiento.** 
+
+
+
+4. **Accede a la aplicación usando un navegador web. **
+
+
+
+**El documento debe contener, además, los siguientes pantallazos: Pantallazo con la instrucción para crear el contenedor de la base de datos. Pantallazo con la instrucción para crear el contenedor de la aplicación. Pantallazo donde se ve el acceso a la aplicación desde un navegador web.**
