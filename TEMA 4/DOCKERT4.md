@@ -19,7 +19,7 @@
         ![](./assets/ej1.png)
         
         Creamos las redes que se nos pide.
-        
+    
 2. **Poner en ejecución un contenedor de la imagen ubuntu:20.04 que tenga como hostname host1, como IP 172.28.0.10 y que esté conectado a la red1. Lo llamaremos u1.**
         
     ```sh
@@ -30,7 +30,7 @@
     ![](./assets/ej2.png)
     
     Creamos el contenedor con la red1 y la ip proporconada en el ejercicio.
-        
+    
 3. **Entrar en ese contenedor e instalar la aplicacion ping ( apt update && apt install inetutils-ping).**
 
     ```sh
@@ -66,6 +66,7 @@
     
     Instalamos la herramienta ping.
     
+
 **PANTALLAZOS. Pantallazos.**
 
 - Pantallazo donde se vea la configuración del contenedor u1.
@@ -103,3 +104,29 @@ Intentamos hacer ping desde u1 a u2.
 ```
 
 ![](assets/pantallazo4.png)
+
+**Despliegue de Nextcloud + mariadb/postgreSQL**
+
+Vamos a desplegar la aplicación nextcloud con una base de datos (puedes elegir mariadb o PostgreSQL) (NOTA: Para que no te de errores utiliza la imagen mariadb:10.5 ). Te puede servir el ejercicio que hemos realizado para desplegar Wordpress . Para ello sigue los siguientes pasos:
+
+1. **Crea una red de tipo bridge.** 
+
+   ```sh
+   docker network create mired
+   ```
+
+   ![](./assets/ej6.png)
+
+   Creamos la red bridge.
+
+   
+
+2. **Crea el contenedor de la base de datos conectado a la red que has creado. La base de datos se debe configurar para crear una base de datos y un usuario. Además el contenedor debe utilizar almacenamiento (volúmenes o bind mount) para guardar la información. Puedes seguir la documentación de mariadb o la de PostgreSQL .** 
+
+   
+
+3.  **A continuación, siguiendo la documentación de la imagen nextcloud , crea un contenedor conectado a la misma red, e indica las variables adecuadas para que se configure de forma adecuada y realice la conexión a la base de datos. El contenedor también debe ser persistente usando almacenamiento.** 
+
+   
+
+4. **Accede a la aplicación usando un navegador web. El documento debe contener, además, los siguientes pantallazos: Pantallazo con la instrucción para crear el contenedor de la base de datos. Pantallazo con la instrucción para crear el contenedor de la aplicación. Pantallazo donde se ve el acceso a la aplicación desde un navegador web.**
